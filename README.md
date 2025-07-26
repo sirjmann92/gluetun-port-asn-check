@@ -13,6 +13,8 @@ If either check fails:
 - The stack is automatically restarted using Docker Compose.
 - A Discord webhook notification is sent to alert you.
 
+NOTE: This script is intended for users with a static forwarded port from your VPN provider. If you have a dynamic forwarded port, this script can still help but you'll need to combine it with a script that detects your forwarded port from the gluetun container. See [here](https://github.com/sirjmann92/nicotineplus-proper/issues/19#issuecomment-2931876766) for an example.
+
 ---
 
 ## 🔧 Configuration
