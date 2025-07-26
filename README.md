@@ -1,6 +1,10 @@
 # Gluetun VPN Monitor & Auto-Recovery Script
 
-This script monitors the health of a Gluetun-based VPN container by checking two key things:
+If your VPN IP address/locale changes frequently while using the Docker gluetun container causing your forwarded port and VPN tunnel to collapse, you can try adding the below environment variable to the your gluetun container's environment variables.
+```
+HEALTH_VPN_DURATION_INITIAL=120s
+```
+If you're still having trouble with frequent IP changes breaking your forwarded port, or if you'd like to automate container restarts and be notified, this script monitors the health of a Gluetun-based VPN container by checking two key things:
 
 - ✅ **Forwarded Port Accessibility**: Ensures your VPN provider's port forwarding remains open.
 - 🔄 **ASN (Autonomous System Number) Consistency**: Detects changes in the provider network (useful for ASN-locked services like MyAnonamouse).
