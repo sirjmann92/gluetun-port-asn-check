@@ -91,4 +91,4 @@ Schedule it with `cron` or your preferred scheduler:
 
 ## 📌 Tip
 
-Pair this script with Gluetun's [port forwarding setup](https://github.com/qdm12/gluetun/wiki/Port-forwarding) to maintain reliability in torrenting or services that require consistent open ports.
+Pair this script with Gluetun's [port forwarding setup](https://github.com/qdm12/gluetun-wiki/blob/main/setup/advanced/vpn-port-forwarding.md) to maintain reliability in torrenting or services that require consistent open ports.
